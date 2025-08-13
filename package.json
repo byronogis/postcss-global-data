@@ -1,0 +1,53 @@
+{
+  "name": "@postcss-global-data/monorepo",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "description": "_description_",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byronogis/postcss-global-data.git"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "pnpm run -r -F './packages/*' dev",
+    "build": "pnpm run -r -F './packages/*' build",
+    "build:full": "pnpm run -r build",
+    "automd": "pnpm run -r automd && pnpm run root:automd",
+    "release": "bumpp -r --no-push && pnpm run -r release",
+    "root:automd": "automd --input='README*.md' && node ./scripts/copy-readme.mjs",
+    "root:lint": "eslint .",
+    "root:lint:fix": "eslint . --fix",
+    "typecheck": "pnpm run -r typecheck",
+    "test": "pnpm run -r test",
+    "clear": "pnpm run -r clear && rimraf -g '**/node_modules' '**/coverage'",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:lint",
+    "@postcss-global-data/shared": "workspace:*",
+    "@postcss-global-data/typescript-config": "workspace:*",
+    "@types/node": "catalog:types",
+    "@vitest/coverage-v8": "catalog:test",
+    "automd": "catalog:deps",
+    "bumpp": "catalog:deps",
+    "eslint": "catalog:lint",
+    "jiti": "catalog:deps",
+    "lint-staged": "catalog:lint",
+    "rimraf": "catalog:deps",
+    "simple-git-hooks": "catalog:lint",
+    "tinyglobby": "catalog:deps",
+    "tsdown": "catalog:build",
+    "typescript": "catalog:deps",
+    "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

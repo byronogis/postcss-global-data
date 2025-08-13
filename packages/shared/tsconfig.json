@@ -1,0 +1,6 @@
+{
+  "extends": "@postcss-global-data/typescript-config/tsconfig.base.json",
+  "include": [
+    "src"
+  ]
+}

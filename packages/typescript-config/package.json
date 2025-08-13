@@ -1,0 +1,13 @@
+{
+  "name": "@postcss-global-data/typescript-config",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./*": "./*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "release": "echo @postcss-global-data/typescript-config noneed release"
+  }
+}
