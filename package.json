@@ -4,7 +4,7 @@
   "version": "0.0.1-beta.1",
   "private": true,
   "packageManager": "pnpm@10.14.0",
-  "description": "_description_",
+  "description": "PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.",
   "repository": {
     "type": "git",
     "url": "https://github.com/byronogis/postcss-global-data.git"

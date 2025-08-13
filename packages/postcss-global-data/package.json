@@ -2,7 +2,7 @@
   "name": "postcss-global-data",
   "type": "module",
   "version": "0.0.1-beta.1",
-  "description": "_description_",
+  "description": "PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.",
   "author": "Byron <byronogis@outlook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/byronogis",
@@ -12,7 +12,12 @@
     "url": "https://github.com/byronogis/postcss-global-data.git"
   },
   "bugs": "https://github.com/byronogis/postcss-global-data/issues",
-  "keywords": [],
+  "keywords": [
+    "css injection",
+    "global data",
+    "postcss-plugin",
+    "productivity"
+  ],
   "sideEffects": false,
   "publishConfig": {
     "access": "public",
@@ -22,12 +27,15 @@
     }
   },
   "exports": {
-    ".": "./src/index.ts",
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist"
   ],
@@ -39,12 +47,16 @@
     "prepublishOnly": "pnpm run build",
     "release": "pnpm publish",
     "typecheck": "tsc --noEmit",
-    "test": "vitest",
+    "test": "node --test",
     "clear": "rimraf dist"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "postcss": "^8.4"
   },
   "devDependencies": {
-    "typescript": "catalog:deps"
+    "@csstools/postcss-tape": "*",
+    "open-props": "^1.7.15",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-custom-properties": "^14.0.6"
   }
 }

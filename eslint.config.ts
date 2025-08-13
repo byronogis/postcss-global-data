@@ -3,6 +3,11 @@ import antfu from '@antfu/eslint-config'
 export default antfu(
   {
     type: 'lib',
+    ignores: [
+      // Reduce differences with `@csstools/postcss-global-data`
+      './packages/postcss-global-data/src/**',
+      './packages/postcss-global-data/test/**',
+    ],
   },
   {
     rules: {

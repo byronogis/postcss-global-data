@@ -12,13 +12,13 @@
 
 [![JSDocs][jsdocs-src]][jsdocs-href]
 
-_description_
+PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.
 
 > [!NOTE]
 >
 > Rename `packages/postcss-global-data`.
 >
-> Replace `postcss-global-data`, `_description_` and `byronogis` globally to use this template.
+> Replace `postcss-global-data`, `PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.` and `byronogis` globally to use this template.
 >
 
 ## Installation
