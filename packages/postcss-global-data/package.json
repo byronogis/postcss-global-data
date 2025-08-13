@@ -48,6 +48,7 @@
     "release": "pnpm publish",
     "typecheck": "tsc --noEmit",
     "test": "node --test",
+    "test:rewrite-expects": "REWRITE_EXPECTS=true node --test",
     "clear": "rimraf dist"
   },
   "peerDependencies": {
