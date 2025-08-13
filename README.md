@@ -16,7 +16,7 @@
 Forked from [@csstools/postcss-global-data@3.0.0](https://github.com/csstools/postcss-plugins/tree/27b9126dc2f049aa20b02f7e3dbbb2c5c6c87f43/plugins/postcss-global-data), motivated by [this issue](https://github.com/csstools/postcss-plugins/issues/1657)
 
 **Changes:**
-- can also pass a object to the `files` element
+- can also pass a object to the `files` element to control the behavior of the plugin
 
 <!-- automd:file src="./packages/postcss-global-data/src/type.ts" code -->
 
@@ -25,12 +25,12 @@ export interface FileConfig {
   file: string
   /**
    * Whether to remove the inject CSS after processing.
-   * @default true
+   * @default true to respect original @csstools/postcss-global-data behavior
    */
   remove?: boolean
   /**
    * Position to insert the CSS.
-   * @default 'prepend' when 'remove' is false, 'append' otherwise
+   * @default 'append' to respect original @csstools/postcss-global-data behavior
    */
   position?: 'append' | 'prepend'
 }
