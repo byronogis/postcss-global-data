@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/postcss-global-data)](https://npmjs.com/package/postcss-global-data)
 [![npm downloads](https://img.shields.io/npm/dm/postcss-global-data)](https://npm.chart.dev/postcss-global-data)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/postcss-global-data)](https://bundlephobia.com/package/postcss-global-data)
+[![install size](https://badgen.net/packagephobia/install/postcss-global-data)](https://packagephobia.com/result?p=postcss-global-data)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/postcss-global-data)](https://codecov.io/gh/byronogis/postcss-global-data)
 [![license](https://img.shields.io/github/license/byronogis/postcss-global-data)](https://github.com/byronogis/postcss-global-data/blob/main/LICENSE)
 
@@ -12,14 +13,30 @@
 
 [![JSDocs][jsdocs-src]][jsdocs-href]
 
-PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.
+Forked from [@csstools/postcss-global-data@3.0.0](https://github.com/csstools/postcss-plugins/tree/27b9126dc2f049aa20b02f7e3dbbb2c5c6c87f43/plugins/postcss-global-data), motivated by [this issue](https://github.com/csstools/postcss-plugins/issues/1657)
 
-> [!NOTE]
->
-> Rename `packages/postcss-global-data`.
->
-> Replace `postcss-global-data`, `PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.` and `byronogis` globally to use this template.
->
+**Changes:**
+- can also pass a object to the `files` element
+
+<!-- automd:file src="./packages/postcss-global-data/src/type.ts" code -->
+
+```ts [type.ts]
+export interface FileConfig {
+  file: string
+  /**
+   * Whether to remove the inject CSS after processing.
+   * @default true
+   */
+  remove?: boolean
+  /**
+   * Position to insert the CSS.
+   * @default 'prepend' when 'remove' is false, 'append' otherwise
+   */
+  position?: 'append' | 'prepend'
+}
+```
+
+<!-- /automd -->
 
 ## Installation
 
@@ -95,7 +112,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Jan 29 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Aug 13 2025)_
 
 <!-- /automd -->
 
