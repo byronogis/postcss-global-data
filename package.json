@@ -17,7 +17,7 @@
     "build": "pnpm run -r -F './packages/*' build",
     "build:full": "pnpm run -r build",
     "automd": "pnpm run -r automd && pnpm run root:automd",
-    "release": "bumpp -r --no-push && pnpm run -r release",
+    "release": "bumpp -r && pnpm run -r release",
     "root:automd": "automd --input='README*.md' && node ./scripts/copy-readme.mjs",
     "root:lint": "eslint .",
     "root:lint:fix": "eslint . --fix",
