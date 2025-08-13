@@ -25,12 +25,12 @@ export interface FileConfig {
   file: string
   /**
    * Whether to remove the inject CSS after processing.
-   * @default true to respect original @csstools/postcss-global-data behavior
+   * @default true to respect original plugin `@csstools/postcss-global-data` behavior
    */
   remove?: boolean
   /**
    * Position to insert the CSS.
-   * @default 'append' to respect original @csstools/postcss-global-data behavior
+   * @default 'append' to respect original plugin `@csstools/postcss-global-data` behavior
    */
   position?: 'append' | 'prepend'
 }
@@ -67,7 +67,18 @@ deno install postcss-global-data
 ## Basic Usage
 
 ```ts
-// usage
+postcssGlobalData({
+  files: [
+    'path/to/file.css',
+    // now you can also pass an object to control the behavior
+    // of the plugin for each file
+    {
+      file: 'path/to/file.css',
+      remove: false,
+      position: 'prepend',
+    }
+  ],
+})
 ```
 
 <!-- automd:fetch url="gh:byronogis/.github/main/snippets/readme-contrib-node-pnpm.md" -->
