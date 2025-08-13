@@ -2,12 +2,12 @@ export interface FileConfig {
 	file: string;
 	/**
 	 * Whether to remove the inject CSS after processing.
-	 * @default true
+	 * @default true to respect original @csstools/postcss-global-data behavior
 	 */
 	remove?: boolean;
 	/**
 	 * Position to insert the CSS.
-	 * @default 'prepend' when 'remove' is false, 'append' otherwise
+	 * @default 'append' to respect original @csstools/postcss-global-data behavior
 	 */
 	position?: 'append' | 'prepend';
 }

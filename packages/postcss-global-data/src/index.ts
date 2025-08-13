@@ -27,7 +27,7 @@ const creator: PluginCreator<pluginOptions> = (opts?: pluginOptions) => {
 			// Default file configuration
 			{
 				remove: true,
-        position: file.remove ? 'append' : 'prepend',
+        position: 'append',
 			},
 			// Provided file configuration
 			file,
