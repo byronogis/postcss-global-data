@@ -1,5 +1,5 @@
 {
-  "name": "postcss-global-data",
+  "name": "@byronogis/postcss-global-data",
   "type": "module",
   "version": "1.0.0",
   "description": "PostCSS plugin to define global data that will be injected into PostCSS for use in other plugins.",

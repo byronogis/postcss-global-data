@@ -40,26 +40,26 @@ export interface FileConfig {
 
 ## Installation
 
-<!-- automd:pm-install name="postcss-global-data" -->
+<!-- automd:pm-install name="@byronogis/postcss-global-data" -->
 
 ```sh
 # ✨ Auto-detect
-npx nypm install postcss-global-data
+npx nypm install @byronogis/postcss-global-data
 
 # npm
-npm install postcss-global-data
+npm install @byronogis/postcss-global-data
 
 # yarn
-yarn add postcss-global-data
+yarn add @byronogis/postcss-global-data
 
 # pnpm
-pnpm install postcss-global-data
+pnpm install @byronogis/postcss-global-data
 
 # bun
-bun install postcss-global-data
+bun install @byronogis/postcss-global-data
 
 # deno
-deno install postcss-global-data
+deno install @byronogis/postcss-global-data
 ```
 
 <!-- /automd -->
@@ -123,7 +123,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Aug 13 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Sat Aug 16 2025)_
 
 <!-- /automd -->
 
