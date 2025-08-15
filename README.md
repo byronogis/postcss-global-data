@@ -1,11 +1,11 @@
 # postcss-global-data
 
-<!-- automd:badges name="postcss-global-data" license codecov bundlephobia packagephobia -->
+<!-- automd:badges name="@byronogis/postcss-global-data" license codecov bundlephobia packagephobia -->
 
-[![npm version](https://img.shields.io/npm/v/postcss-global-data)](https://npmjs.com/package/postcss-global-data)
-[![npm downloads](https://img.shields.io/npm/dm/postcss-global-data)](https://npm.chart.dev/postcss-global-data)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/postcss-global-data)](https://bundlephobia.com/package/postcss-global-data)
-[![install size](https://badgen.net/packagephobia/install/postcss-global-data)](https://packagephobia.com/result?p=postcss-global-data)
+[![npm version](https://img.shields.io/npm/v/@byronogis/postcss-global-data)](https://npmjs.com/package/@byronogis/postcss-global-data)
+[![npm downloads](https://img.shields.io/npm/dm/@byronogis/postcss-global-data)](https://npm.chart.dev/@byronogis/postcss-global-data)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@byronogis/postcss-global-data)](https://bundlephobia.com/package/@byronogis/postcss-global-data)
+[![install size](https://badgen.net/packagephobia/install/@byronogis/postcss-global-data)](https://packagephobia.com/result?p=@byronogis/postcss-global-data)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/postcss-global-data)](https://codecov.io/gh/byronogis/postcss-global-data)
 [![license](https://img.shields.io/github/license/byronogis/postcss-global-data)](https://github.com/byronogis/postcss-global-data/blob/main/LICENSE)
 
@@ -130,4 +130,4 @@ _🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Sat Aug 
 <!-- Badges -->
 
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/postcss-global-data
+[jsdocs-href]: https://www.jsdocs.io/package/@byronogis/postcss-global-data
